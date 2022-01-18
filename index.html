@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Omar's Portfolio</title>
   </head>
-  <body>
+  <body style="height: 100vh;">
     <header>
       <!-- First Nav -->
       <nav class="navi-container">
@@ -43,25 +43,88 @@
           <ul class="nav-2">
             <li class="nav-item">
               <a
-                class="nav-link a-nav"
-                href="https://www.linkedin.com/in/omar-tabaa-rajla-269bab125/"
-                >LinkedIn</a
+                class="nav-link a-nav linkedin "
+                href="https://www.linkedin.com/in/omar-tabaa-rajla-269bab125/" target="blank"
+                ></a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link a-nav"
-                href="https://github.com/Omar-Tabaa-Rajla"
-                >Github</a
+                class="nav-link a-nav github"
+                href="https://github.com/Omar-Tabaa-Rajla"  target="blank"
+                ></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link a-nav" href="https://facebook.com">Facebook</a>
+              <a class="nav-link a-nav facebook" href="https://facebook.com"  target="blank"></a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
+    <!-- The body of my project -->
+    <main class="row align-items-center justify-content-center h-100">
+      <section class="hero-section  ">
+        <div class="container h-100 d-flex flex-column justify-content-center align-content-center">
+          <div class="row  ">
+            <div
+              class="col-3 d-flex flex-column align-items-start justify-content-center my-texts"
+            >
+              <span class="h4 sub-title">biography</span>
+              <p>
+                Do what you love, love what you do. I do love web development. My name is Omar and I'm a web developer based in Germany.
+              </p>
+              <span class="h4 sub-title">education</span>
+              <p>
+                Bachelor's degree in Computer Science. <br>
+                Training at Digital Career Institute in web development.
+              </p>
+              <span class="h4 sub-title">services</span>
+              <p>
+                Full stack development <br>
+                React, Node.js and Angular <br>
+                SQL <br>
+                C#
+              </p>
+            </div>
+            <div
+              class="col-6 d-flex flex-column align-items-center justify-content-center hero"
+            >
+              <img class="img-thumbnail rounded-circle" src="./css/images/hero.jpg" alt="">
+            </div>
+            <div
+              class="col-3 d-flex flex-column align-items-start justify-content-center my-texts"
+            >
+              <span class="h4 sub-title">projects done</span>
+              <p>
+                3
+              </p>
+              <span class="h4 sub-title">my advantage</span>
+              <p>
+                HTML <br>
+                CSS <br>
+                Bootstrap <br>
+                Javascript <br>
+              </p>
+              <span class="h4 sub-title">Prevoius jobs</span>
+              <p>
+                Fitness Trainer <br>
+                Accountant <br>
+                Cashier <br>
+              </p>
+            </div>
+          </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer
+    class="container-fluid py-2 mt-4 pt-4 mt-auto "
+  >
+    <div class=" copy-right ">
+      <p>&#169; Omar Tabaa Rajla. All Rights Reserved </p>
+    </div>
+  
+  </footer>
     <!-- Script  -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

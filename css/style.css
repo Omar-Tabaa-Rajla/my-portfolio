@@ -1,11 +1,13 @@
 :root {
   --textColor: #4d1d4d;
+  --background-color: #eee;
+  --border-color: #4d1d4d;
+  --title-home: #525252;
+  --footer-background: #ccc;
 }
 
 body {
-  background-image: url("./images/background.jpeg");
-  background-repeat: no-repeat;
-  height: 2000px;
+  background-color: var(--background-color);
 }
 
 .navi-container,
@@ -18,12 +20,15 @@ body {
   top: 3rem;
   transform: translate(-50%, -50%);
   width: 20rem;
-  animation: pop-up-logo 1s linear forwards,
-    logo-animation 2s 1s infinite ease forwards;
+  animation: pop-up-logo 2s linear forwards,
+    logo-animation 2s 2s infinite ease forwards;
 }
 @keyframes pop-up-logo {
   0% {
     top: -10rem;
+  }
+  50% {
+    top: 5.5rem;
   }
   100% {
     top: 3rem;
@@ -46,7 +51,6 @@ body {
 
 .a-nav {
   color: var(--textColor);
-  /* font-size: 2rem; */
 }
 
 .icons-nav {
@@ -58,6 +62,28 @@ body {
   list-style: none;
   display: flex;
 }
+/* adding Icons */
+.linkedin::after {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f0e1";
+}
+.github::after {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f09b";
+}
+.facebook::after {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f09a";
+}
+.linkedin:hover,
+.github:hover,
+.facebook:hover {
+  transform: scale(1.5);
+}
+/* media query to hide the logo in xs and adjust the icons */
 @media screen and (max-width: 576px) {
   .my-logo img {
     display: none;
@@ -65,9 +91,40 @@ body {
   header {
     display: flex;
     flex-wrap: wrap;
-    color: tomato;
   }
   .icons-nav {
     margin-top: 2rem;
   }
+}
+@media screen and (max-width: 768px) {
+  .my-logo img {
+    width: 10rem;
+  }
+}
+/* Styling the body  */
+
+.hero img {
+  height: 620px;
+  width: 450px;
+  object-fit: cover;
+  border: 4px solid var(--border-color);
+}
+.my-texts {
+  color: var(--textColor);
+}
+.sub-title {
+  color: var(--title-home);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.col-3 span,
+.col-3 p {
+  line-height: 1.8;
+}
+/* background color of the footer */
+footer {
+  background-color: var(--footer-background);
+}
+.copy-right {
+  margin-left: 2rem;
 }
