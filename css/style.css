@@ -1,0 +1,65 @@
+:root {
+  --textColor: #4d1d4d;
+}
+
+body {
+  background-image: url("./images/background.jpeg");
+  background-repeat: no-repeat;
+  height: 2000px;
+}
+
+.navi-container,
+.logo-container {
+  position: relative;
+}
+.my-logo img {
+  position: absolute;
+  left: 50%;
+  top: 3rem;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  animation: pop-up-logo 1s linear forwards,
+    logo-animation 2s 1s infinite ease forwards;
+}
+@keyframes pop-up-logo {
+  0% {
+    top: -10rem;
+  }
+  100% {
+    top: 3rem;
+  }
+}
+
+@keyframes logo-animation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.a-nav {
+  color: var(--textColor);
+  /* font-size: 2rem; */
+}
+
+.icons-nav {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}
+.nav-2 {
+  list-style: none;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .my-logo img {
+    display: none;
+  }
+}
