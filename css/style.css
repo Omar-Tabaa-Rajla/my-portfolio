@@ -14,6 +14,9 @@ body {
 .logo-container {
   position: relative;
 }
+.navi-container {
+  margin-left: 0.5rem;
+}
 .my-logo img {
   position: absolute;
   left: 50%;
@@ -82,6 +85,10 @@ body {
 .github:hover,
 .facebook:hover {
   transform: scale(1.5);
+}
+.exp:hover,
+.cont:hover {
+  transform: scale(1.2);
 }
 /* media query to hide the logo in xs and adjust the icons */
 @media screen and (max-width: 576px) {
