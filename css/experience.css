@@ -1,15 +1,14 @@
 .cards-container {
   width: 70%;
-  perspective: 800px;
-
+  perspective: 1000px;
   border-radius: 20px;
 }
 .box-card {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 290px;
   transform-style: preserve-3d;
-  transition: transform 1s;
+  transition: transform 1.5s;
   transform-origin: right center;
 }
 .box-card .face {
@@ -19,9 +18,49 @@
   backface-visibility: hidden;
   border-radius: 20px;
 }
+.box-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+}
 .box-card .back {
   transform: rotateY(180deg);
+  background-color: var(--footer-background);
+  object-fit: cover;
+  word-break: break-all;
+  color: var(--textColor);
 }
 .box-card:hover {
   transform: translateX(-100%) rotateY(-180deg);
+}
+.extract-link:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f35d";
+  color: var(--textColor);
+}
+/* the sixth box*/
+.loading-card {
+  width: 70%;
+  border-radius: 20px;
+  height: 290px;
+  /* border: 1px solid black; */
+  background-color: var(--footer-background);
+}
+
+.spin {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid black;
+  animation: spinning 2s linear infinite forwards;
+  border-left-color: transparent;
+  margin-left: 0.5rem;
+}
+@keyframes spinning {
+  100% {
+    transform: rotate(1turn);
+  }
 }

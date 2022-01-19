@@ -19,10 +19,11 @@ body {
 }
 .my-logo img {
   position: absolute;
-  left: 50%;
+  left: 51%;
   top: 3rem;
   transform: translate(-50%, -50%);
   width: 20rem;
+  background: none;
   animation: pop-up-logo 2s linear forwards,
     logo-animation 2s 2s infinite ease forwards;
 }
