@@ -152,7 +152,7 @@
             <input
               type="radio"
               id="scratch"
-              name="from-scratch"
+              name="order-condition"
               value="from-scratch"
               checked
             />
@@ -161,7 +161,7 @@
             <input
               type="radio"
               id="frame"
-              name="frame-work"
+              name="order-condition"
               value="frame-work"
             />
             <label for="frame">By using a frame work</label> <br />
@@ -169,7 +169,7 @@
             <input
               type="radio"
               id="team"
-              name="team-decision"
+              name="order-condition"
               value="team-decision"
             />
             <label for="team">It's up to the team</label> <br />
@@ -194,7 +194,35 @@
           </fieldset>
         </div>
       </div>
+      <!-- personal comments -->
+      <div class="row">
+        <div
+          class="col d-flex flex-column justify-content-center align-items-center"
+        >
+          <fieldset class="mt-3 comment">
+            <legend>Would you like to add something else?</legend>
+            <textarea
+              name="customer'scomment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder="Write here please ..."
+            ></textarea>
+          </fieldset>
+        </div>
+      </div>
+
       <!-- Submit & Reset -->
+      <div class="buttons-container">
+        <button class="my-btn">Submit</button>
+        <button class="my-btn">Reset</button>
+      </div>
+      <!-- Footer -->
+      <footer class="container-fluid py-2 mt-4 pt-4 m-auto">
+        <div class="copy-right">
+          <p>&#169; Omar Tabaa Rajla. All Rights Reserved</p>
+        </div>
+      </footer>
     </form>
   </body>
 </html>
