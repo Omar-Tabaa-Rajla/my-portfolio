@@ -20,7 +20,7 @@ body {
 .my-logo img {
   position: absolute;
   left: 50%;
-  top: 2.3rem;
+  top: 2rem;
   transform: translate(-50%, -50%);
   width: 14rem;
 
@@ -36,7 +36,7 @@ body {
     top: 5.5rem;
   }
   100% {
-    top: 2.3rem;
+    top: 2rem;
   }
 }
 
@@ -109,6 +109,15 @@ body {
   }
   body {
     height: 120vh !important;
+  }
+  .back h5,
+  .back p,
+  ul li {
+    font-size: 1rem !important;
+    line-height: 1 !important;
+  }
+  .spin {
+    margin-left: 0 !important;
   }
 }
 @media screen and (max-width: 768px) {
