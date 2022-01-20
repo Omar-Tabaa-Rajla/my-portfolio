@@ -20,7 +20,7 @@ body {
 .my-logo img {
   position: absolute;
   left: 51%;
-  top: 3rem;
+  top: 1.5rem;
   transform: translate(-50%, -50%);
   width: 20rem;
   background: none;
@@ -35,7 +35,7 @@ body {
     top: 5.5rem;
   }
   100% {
-    top: 3rem;
+    top: 1.5rem;
   }
 }
 
@@ -102,6 +102,9 @@ body {
   }
   .icons-nav {
     margin-top: 2rem;
+  }
+  .hero img {
+    width: 20%;
   }
 }
 @media screen and (max-width: 768px) {
