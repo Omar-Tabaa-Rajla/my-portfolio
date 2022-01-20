@@ -1,5 +1,5 @@
 #first-field {
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 fieldset {
   border: 1px solid var(--footer-background);
@@ -43,6 +43,7 @@ textarea {
   background: none;
   border-color: var(--border-color);
   outline: none;
+  width: 50%;
 }
 .buttons-container {
   margin: 1rem 0 0 0.2rem;

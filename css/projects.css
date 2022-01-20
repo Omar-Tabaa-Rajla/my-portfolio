@@ -28,10 +28,12 @@
 .box-card .back {
   transform: rotateY(180deg);
   background-color: var(--footer-background);
-  object-fit: cover;
-  word-break: break-all;
   color: var(--textColor);
+  word-break: break-all;
+  hyphens: manual;
+  /* overflow-wrap: break-word; */
 }
+
 .box-card:hover {
   transform: translateX(-100%) rotateY(-180deg);
 }

@@ -1,5 +1,5 @@
 - ## Logo & Favicon
-  https://www.freelogodesign.org/
+  https://looka.com/
 - ## Tool to remove the white Background
 
   https://www.remove.bg/
