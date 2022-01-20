@@ -44,3 +44,15 @@ textarea {
   border-color: var(--border-color);
   outline: none;
 }
+.buttons-container {
+  margin: 1rem 0 0 0.2rem;
+}
+.my-btn {
+  color: var(--textColor);
+  font-weight: 500;
+  outline: none;
+  border-color: var(--footer-background);
+}
+.reset-btn {
+  margin-left: 0.2rem;
+}

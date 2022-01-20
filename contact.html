@@ -80,7 +80,7 @@
         >
           <fieldset id="first-field">
             <legend>Contact Info</legend>
-            <label for="first-name"> First Name</label>
+            <label for="first-name"> First name: </label>
             <input
               class="fn-field"
               type="text"
@@ -90,11 +90,11 @@
               required
             />
             <br />
-            <label for="last-name"> Last name</label>
+            <label for="last-name"> Last name:</label>
             <input type="text" name="lname" id="last-name" required />
             <br />
 
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <input
               type="email"
               name="email"
@@ -154,7 +154,6 @@
               id="scratch"
               name="order-condition"
               value="from-scratch"
-              checked
             />
             <label for="scratch">From scratch</label> <br />
 
@@ -171,6 +170,7 @@
               id="team"
               name="order-condition"
               value="team-decision"
+              checked
             />
             <label for="team">It's up to the team</label> <br />
           </fieldset>
@@ -213,9 +213,14 @@
       </div>
 
       <!-- Submit & Reset -->
-      <div class="buttons-container">
-        <button class="my-btn">Submit</button>
-        <button class="my-btn">Reset</button>
+      <div class="row">
+        <div class="col-3"></div>
+        <div class="col-7 buttons-container">
+          <button type="submit" class="my-btn p-2 rounded">Submit</button>
+          <button type="reset" class="my-btn reset-btn p-2 rounded">
+            Reset
+          </button>
+        </div>
       </div>
       <!-- Footer -->
       <footer class="container-fluid py-2 mt-4 pt-4 m-auto">
